@@ -235,6 +235,7 @@ const css = `
     justify-content: center;
     flex-wrap: wrap;
     background: rgba(255,255,255,0.1);
+  background: rgba(0,0,0,0.25);
     border-top: 1px solid rgba(255,255,255,0.15);
     border-bottom: 1px solid rgba(255,255,255,0.15);
     backdrop-filter: blur(8px);
@@ -251,7 +252,6 @@ const css = `
     font-family: 'Sora', sans-serif;
     font-size: 2rem;
     font-weight: 800;
-    color: #fff;
     line-height: 1;
   }
   .stat-label {
@@ -530,7 +530,7 @@ const FEATURES: FeatureCardProps[] = [
     iconBg: "icon-blue",
     title: "Past Question Bank",
     description:
-      "Practice with real past exam questions from your general university courses, organized by subject and topic.",
+      "Practice real past exam questions from your university courses, organized by course and topic.",
   },
   {
     icon: "⏱",
@@ -642,7 +642,7 @@ const App: React.FC = () => {
         {/* NAVBAR */}
         <nav className={`navbar${scrolled ? " navbar-scrolled" : ""}`}>
           <div className="logo">
-            <img src={logo}  />
+            <img src={logo} />
           </div>
           <ul className="nav-links">
             <li>
@@ -701,7 +701,9 @@ const App: React.FC = () => {
         <div className="stats-strip">
           {STATS.map((stat) => (
             <div key={stat.label} className="stat-item">
-              <div className="stat-num">{stat.value}</div>
+              <div className="stat-num" >
+                {stat.value}
+              </div>
               <div className="stat-label">{stat.label}</div>
             </div>
           ))}
