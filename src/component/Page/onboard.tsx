@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import logo from "../Assets/makeSimple.png"
+import { useNavigate } from "react-router-dom";
 
 const css = `
   @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=DM+Sans:wght@400;500;600&display=swap');
@@ -248,12 +249,6 @@ const css = `
     border-right: 1px solid rgba(255,255,255,0.15);
   }
   .stat-item:last-child { border-right: none; }
-  .stat-num {
-    font-family: 'Sora', sans-serif;
-    font-size: 2rem;
-    font-weight: 800;
-    line-height: 1;
-  }
   .stat-label {
     font-size: 0.8rem;
     color: rgba(255,255,255,0.7);
@@ -635,6 +630,8 @@ const App: React.FC = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const navigate = useNavigate();
+
   return (
     <>
       <style>{css}</style>
@@ -652,10 +649,12 @@ const App: React.FC = () => {
               <a href="#how-it-works">How it works</a>
             </li>
             <li>
-              <a href="#subjects">Subjects</a>
+              <a href="#subjects">Courses</a>
             </li>
           </ul>
-          <button className="nav-cta">Start Practicing Free</button>
+          <button className="nav-cta" onClick={() => navigate("/courses")}>
+            Start Practicing Free
+          </button>
         </nav>
 
         {/* HERO — stays on blue bg */}
@@ -688,7 +687,11 @@ const App: React.FC = () => {
           </p>
 
           <div className="hero-actions">
-            <a href="#" className="btn-primary">
+            <a
+              href="#"
+              className="btn-primary"
+              onClick={() => navigate("/courses")}
+            >
               Start Practicing Free
             </a>
             <a href="#how-it-works" className="btn-secondary">
@@ -701,9 +704,7 @@ const App: React.FC = () => {
         <div className="stats-strip">
           {STATS.map((stat) => (
             <div key={stat.label} className="stat-item">
-              <div className="stat-num" >
-                {stat.value}
-              </div>
+              <div className="stat-num">{stat.value}</div>
               <div className="stat-label">{stat.label}</div>
             </div>
           ))}
@@ -775,7 +776,9 @@ const App: React.FC = () => {
               Join other students already using makeSimple to prepare smarter.
               It's free to get started — no excuses.
             </p>
-            <button className="cta-btn">Start Practicing Now →</button>
+            <button className="cta-btn" onClick={() => navigate("/courses")}>
+              Start Practicing Now →
+            </button>
           </div>
         </section>
 
