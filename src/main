@@ -1,0 +1,235 @@
+import Heading from "../heading.tsx";
+import Body from "../body.tsx";
+import { data, alphabet } from "../Assets/data.tsx";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
+export default function MainPage() {
+  const [index, setIndex] = useState(0)
+  const [select, setSelect] = useState<string | null>(null)
+  const [score, setScore] = useState(0)
+  const lastQuestion = index === data.length - 1;
+  const navigate = useNavigate();
+
+  function handleSelected(option: string) {
+    if(select !== null) return
+    setSelect(option)
+    if (option === data[index].ans) {
+      setScore(pre => pre + 1)
+    }
+  }
+  function handleNext() {
+    setIndex(prev => prev + 1)
+    setSelect(null);
+    if (lastQuestion) {
+      navigate("/scores", {state : {score}});
+    }
+  }
+  function handlePrevious() {
+    setIndex(prev => prev - 1)
+  }
+  return (
+    <div className="contact">
+      <div className="top-bg"></div>
+      <div className="content">
+        <Heading
+          numbers={index + 1}
+          total={data.length}
+          previous={handlePrevious}
+        />
+        <Body
+          questions={data[index]}
+          letter={alphabet}
+          onNext={handleNext}
+          onSelect={handleSelected}
+          selected={select}
+        />
+      </div>
+    </div>
+  );
+}
+
+
+
+
+
+type props = {
+  questions: {
+    question: string,
+    options: string[],
+    ans: string
+  }
+  letter: string[]
+  onNext: () => void
+  onSelect: (option: string) => void
+  selected: string | null
+}
+export default function Body({ questions, letter, onNext, onSelect, selected }: props) {
+  return (
+    <div className="body-container">
+      <div className="movingpart"></div>
+
+      <div className="mainBody">
+        <div className="question">
+          <h2>{questions.question}</h2>
+          <ul>
+            {questions.options.map((opt, index) => (
+              <li
+                key={index}
+                onClick={() => onSelect(opt)}
+                style={{
+                  cursor: "pointer",
+                  backgroundColor:
+                    selected === opt
+                      ? opt === questions.ans
+                        ? "hsl(120, 100%, 85%)"
+                        : "hsl(0, 100%, 85%)"
+                      : opt === questions.ans && selected !== null
+                        ? "hsl(120, 100%, 85%)"
+                        : "",
+                }}
+              >
+                <div className="letters-contain">
+                  <span className="letters">{letter[index]}</span>
+                </div>
+                {opt}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+      <button className="button" onClick={onNext}>
+        Next
+      </button>
+    </div>
+  );
+}
+
+
+
+
+
+import Heading from "../heading.tsx";
+import Body from "../body.tsx";
+import { data, alphabet } from "../Assets/data.tsx";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
+export default function MainPage() {
+  const [index, setIndex] = useState(0);
+  const [answers, setAnswers] = useState<(string | null)[]>([]);
+  const [score, setScore] = useState(0);
+
+  const lastQuestion = index === data.length - 1;
+  const navigate = useNavigate();
+
+  function handleSelected(option: string) {
+    // prevent changing answer
+    if (answers[index] != null) return;
+
+    const updated = [...answers];
+    updated[index] = option;
+    setAnswers(updated);
+
+    if (option === data[index].ans) {
+      setScore((prev) => prev + 1);
+    }
+  }
+
+  function handleNext() {
+    if (lastQuestion) {
+      navigate("/scores", { state: { score } });
+      return;
+    }
+
+    setIndex((prev) => prev + 1);
+  }
+
+  function handlePrevious() {
+    setIndex((prev) => prev - 1);
+  }
+
+  function handleTimeUp() {
+    navigate("/scores", { state: { score } });
+  }
+  return (
+    <div className="contact">
+      <div className="top-bg"></div>
+
+      <div className="content">
+        <Heading
+          numbers={index + 1}
+          total={data.length}
+          previous={handlePrevious}
+          onTimeUp={handleTimeUp}
+        />
+
+        <Body
+          questions={data[index]}
+          letter={alphabet}
+          onNext={handleNext}
+          onSelect={handleSelected}
+          selected={answers[index] || null}
+        />
+      </div>
+    </div>
+  );
+}
+
+
+
+
+
+
+
+import { useState } from "react";
+import { Link} from "react-router-dom";
+
+const slides = [
+  {
+    title: " Welcome to MakeSimple",
+    text: "A smarter way to practice CBT exams without stress. Everything you need to learn, test, and improve is right here in one place.",
+  },
+  {
+    title: "Learn Smarter, Not Harder",
+    text: "Practice real exam-style questions designed to help you understand faster and remember longer. No confusion, just clear learning.",
+  },
+  {
+    title: "Track Your Progress",
+    text: "See your scores instantly, understand your performance, and improve step by step with every test you take.",
+  },
+  {
+    title: "Build Confidence",
+    text: "Get comfortable with CBT exams before the real one. The more you practice, the more confident you become.",
+  },
+  {
+    title: "Ready to Begin?",
+    text: "Start your first test now and take a step closer to success. Your journey to better results begins here.",
+  },
+];
+
+export default function OnBoard() {
+  const [index, setIndex] = useState(0);
+  const nextSlide = () => {
+    if (index < slides.length - 1) {
+      setIndex(index + 1);
+    }
+  };
+  return (
+    <div className="onboard-container">
+      <div className="onboard-card">
+        <div className="onboard-title">{slides[index].title}</div>
+        <div className="onboard-text">{slides[index].text}</div>
+        {index < slides.length - 1 ? (
+          <button className="onboard-next" onClick={nextSlide}>
+            Next
+          </button>
+        ) : (
+          <Link to="/Question_Answer" className="onboard-start">
+            start test
+          </Link>
+        )}
+      </div>
+    </div>
+  );
+}

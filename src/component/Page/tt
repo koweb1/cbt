@@ -1,0 +1,56 @@
+import { Routes, Route } from "react-router-dom";
+import MainPage from "./component/Page/mainPage.tsx";
+import OnBoard from "./component/Page/onboard";
+import ScorePage from "./component/Page/scorePage.tsx";
+function App() {
+  return (
+    <>
+      <Routes>
+        <Route path="/" element={<OnBoard />} />
+        <Route path="/Question_Answer" element={<MainPage />} />
+        <Route path="/scores" element={<ScorePage/>} />
+      </Routes>
+    </>
+  );
+}
+
+export default App;
+
+
+import { IoMdCheckmark } from "react-icons/io";
+type props = {
+  score: number
+}
+
+export default function ScorePage({ score }: props) {
+  const remark = () => {
+    if (score <= 5) {
+    return <div>Bad performance</div>
+    } else if (score > 5) {
+      return <div>Good performance</div>;
+    } else if (score > 10) {
+       return <div>Excellent performance!🎉</div>;
+    }
+}
+  return (
+    <div className="score_container">
+      <div className="score-body">
+        <div className="scoremark">
+          <IoMdCheckmark size={40} />
+        </div>
+        <div className="scoretext">
+          <div className="score">{score} /15</div>
+          <div className="yourscore">Your score</div>
+          <div className="score-review"> { remark() }</div>
+          <div className="score-description">
+            You answered all questions correctly.
+          </div>
+          <div className="score-description">Score: 100%</div>
+          <button className="score-button ">Retake Test</button>
+          <button className="score-button2">Exit page</button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
