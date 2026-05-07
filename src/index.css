@@ -171,7 +171,6 @@ body {
   }
 }
 
-
 :root {
   --bluem: #3b82f6;
   --purple: #7c3aed;
@@ -182,7 +181,7 @@ body {
   --text-muted: rgba(255, 255, 255, 0.65);
   --card-bg: rgba(255, 255, 255, 0.06);
   --card-border: rgba(255, 255, 255, 0.12);
-    --blue: #1a5fb4;
+  --blue: #1a5fb4;
   --green: #26a269;
 }
 
@@ -197,7 +196,6 @@ body {
   line-height: 1;
 }
 
-
 .course-page {
   background: var(--blue);
   min-height: 100vh;
@@ -205,7 +203,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   color: white;
 }
 
@@ -225,7 +223,7 @@ body {
 
 /* ── Heading ── */
 .title {
-  font-family: 'Sora', sans-serif;
+  font-family: "Sora", sans-serif;
   font-size: 2.2rem;
   font-weight: 800;
   line-height: 1.15;
@@ -244,8 +242,9 @@ body {
 .search-wrap {
   position: relative;
   width: 100%;
-  max-width: 360px;
+  max-width: 400px;
   margin-bottom: 2.5rem;
+  display: flex;
 }
 
 .search-icon {
@@ -265,9 +264,11 @@ body {
   background: rgba(255, 255, 255, 0.12);
   color: white;
   font-size: 0.9rem;
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   outline: none;
-  transition: border-color 0.2s, background 0.2s;
+  transition:
+    border-color 0.2s,
+    background 0.2s;
 }
 
 .search::placeholder {
@@ -327,7 +328,10 @@ body {
   flex-direction: column;
   gap: 0.25rem;
   cursor: pointer;
-  transition: transform 0.22s ease, background 0.22s ease, border-color 0.22s ease;
+  transition:
+    transform 0.22s ease,
+    background 0.22s ease,
+    border-color 0.22s ease;
 }
 
 .card:hover {
@@ -366,7 +370,7 @@ body {
 }
 
 .card-code {
-  font-family: 'Sora', sans-serif;
+  font-family: "Sora", sans-serif;
   font-size: 1.2rem;
   font-weight: 800;
   color: white;
@@ -436,11 +440,13 @@ body {
   color: white;
   font-size: 0.82rem;
   font-weight: 600;
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   cursor: pointer;
   white-space: nowrap;
   box-shadow: 0 2px 12px rgba(38, 162, 105, 0.4);
-  transition: opacity 0.18s, transform 0.18s;
+  transition:
+    opacity 0.18s,
+    transform 0.18s;
 }
 
 .start-btn:hover {
@@ -480,5 +486,14 @@ body {
 
   .stats-row {
     gap: 1rem;
+  }
+
+  .search-wrap {
+    position: relative;
+    max-width: 360px;
+  }
+
+  .search {
+    width: 100%;
   }
 }

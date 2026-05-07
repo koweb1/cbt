@@ -1,0 +1,1380 @@
+export const data0 = [
+  {
+    question: "A poor listener only ____",
+    options: [
+      "listen for facts",
+      "listen to the concluding statements",
+      "listen to the introductory remarks",
+      "bothers about the speaker’s language",
+    ],
+    ans: "listen for facts",
+  },
+  {
+    question: "An outline helps the student to ____",
+    options: [
+      "memorize points",
+      "date his/her materials",
+      "structure his/her assignment",
+      "summarize his/her work",
+    ],
+    ans: "structure his/her assignment",
+  },
+  {
+    question: "A good student must provide ____ for his/her work",
+    options: [
+      "only the page of source material",
+      "only the publishers of the source material",
+      "the initials of the author referred to",
+      "a reference for his/her work",
+    ],
+    ans: "a reference for his/her work",
+  },
+  {
+    question: "Plagiarism does not cover ____",
+    options: [
+      "copying from other person’s work",
+      "information that is common knowledge",
+      "lifting other peoples ideas mindlessly",
+      "all of the above",
+    ],
+    ans: "information that is common knowledge",
+  },
+  {
+    question: "A good learner ____",
+    options: [
+      "goes to the library everyday",
+      "is an attentive listener",
+      "sits always in front of the class",
+      "always asks questions in class",
+    ],
+    ans: "is an attentive listener",
+  },
+  {
+    question: "One of these is a more rigorous way of getting knowledge ____",
+    options: ["reading", "studying", "acting", "talking"],
+    ans: "studying",
+  },
+  {
+    question: "Unlike communication, language is ____",
+    options: [
+      "human specific",
+      "animal specific",
+      "human and animal specific",
+      "neither animal or human specific",
+    ],
+    ans: "human specific",
+  },
+  {
+    question:
+      "When a language lacks a logical connection between words or sounds and the objects it refers to, it is said to be ____",
+    options: ["arbitrary", "objective", "subjective", "unintelligible"],
+    ans: "arbitrary",
+  },
+  {
+    question: "____ occurs when a language is used to talk about language",
+    options: ["semanticity", "discreteness", "creativity", "reflexibility"],
+    ans: "reflexibility",
+  },
+  {
+    question: "Anything that reduces the fidelity of communication is ____",
+    options: ["noise", "medium", "feedback", "stimulus"],
+    ans: "noise",
+  },
+  {
+    question: "Body movement is a form of ____",
+    options: ["proxemics", "kinesics", "chronemics", "distance"],
+    ans: "kinesics",
+  },
+  {
+    question: "Horizontal communication takes place ____",
+    options: [
+      "during lectures",
+      "among people of the same rank",
+      "between a boss and a worker",
+      "between father and son",
+    ],
+    ans: "among people of the same rank",
+  },
+  {
+    question: "Communication has ____ essential components",
+    options: ["six", "nine", "eight", "twelve"],
+    ans: "eight",
+  },
+  {
+    question: "____ is a proper noun",
+    options: ["Ada", "Knowledge", "Casts", "Markets"],
+    ans: "Ada",
+  },
+  {
+    question: "There are six ____ in the garden",
+    options: ["Ox", "Oxen", "Oxs", "Oxes"],
+    ans: "Oxen",
+  },
+  {
+    question: "He blamed himself. 'himself' in this sentence is ____",
+    options: [
+      "reflexive pronoun",
+      "interrogative pronoun",
+      "intensive pronoun",
+      "reciprocal pronoun",
+    ],
+    ans: "reflexive pronoun",
+  },
+  {
+    question: "One of the following shows an adverb of manner",
+    options: [
+      "They lived happily",
+      "He has gone there",
+      "She went to Lagos yesterday",
+      "She will come",
+    ],
+    ans: "They lived happily",
+  },
+  {
+    question: "'He loves reading' is an example of ____",
+    options: [
+      "simple present tense",
+      "past present tense",
+      "present perfect tense",
+      "past continuous tense",
+    ],
+    ans: "simple present tense",
+  },
+  {
+    question: "She congratulated him ___ his success at the polls",
+    options: ["for", "at", "on", "in"],
+    ans: "on",
+  },
+  {
+    question: "'Do not go there' is an ____ sentence",
+    options: ["declarative", "imperative", "optative", "exclamatory"],
+    ans: "imperative",
+  },
+];
+
+export const data1 = [
+  {
+    question: "A poor listener only ____",
+    options: [
+      "listen for facts",
+      "listen to the concluding statements",
+      "listen to the introductory remarks",
+      "bothers about the speaker’s language",
+    ],
+    ans: "listen for facts",
+  },
+  {
+    question: "An outline helps the student to ____",
+    options: [
+      "memorize points",
+      "date his/her materials",
+      "structure his/her assignment",
+      "summarize his/her work",
+    ],
+    ans: "structure his/her assignment",
+  },
+  {
+    question: "A good student must provide ____ for his/her work",
+    options: [
+      "only the page of source material",
+      "only the publishers of the source material",
+      "the initials of the author referred to",
+      "a reference for his/her work",
+    ],
+    ans: "a reference for his/her work",
+  },
+  {
+    question: "Plagiarism does not cover ____",
+    options: [
+      "copying from other person’s work",
+      "information that is common knowledge",
+      "lifting other peoples ideas mindlessly",
+      "none of the above",
+    ],
+    ans: "information that is common knowledge",
+  },
+  {
+    question: "A good learner ____",
+    options: [
+      "goes to the library everyday",
+      "is an attentive listener",
+      "sits always in front of the class",
+      "always asks questions in class",
+    ],
+    ans: "is an attentive listener",
+  },
+  {
+    question: "One of these is a more rigorous way of getting knowledge ____",
+    options: ["reading", "studying", "acting", "talking"],
+    ans: "studying",
+  },
+  {
+    question: "Unlike communication, language is ____",
+    options: [
+      "human specific",
+      "animal specific",
+      "human and animal specific",
+      "neither animal or human specific",
+    ],
+    ans: "human specific",
+  },
+  {
+    question:
+      "When a language lacks a logical connection between words or sounds and the objects it refers to, it is said to be ____",
+    options: ["arbitrary", "objective", "subjective", "unintelligible"],
+    ans: "arbitrary",
+  },
+  {
+    question: "____ occurs when a language is used to talk about language",
+    options: ["semanticity", "discreteness", "creativity", "reflexibility"],
+    ans: "reflexibility",
+  },
+  {
+    question: "Anything that reduces the fidelity of communication is ____",
+    options: ["noise", "medium", "feedback", "stimulus"],
+    ans: "noise",
+  },
+
+  // ... CONTINUES CLEANLY
+
+  {
+    question: "He noted that it was the ___ performance ever",
+    options: ["worse", "worst", "most worst", "more worse"],
+    ans: "worst",
+  },
+  {
+    question: "Without a/an ___ there is no public speaker",
+    options: ["audience", "paper", "auditorium", "chamber"],
+    ans: "audience",
+  },
+  {
+    question:
+      "____ can improve one’s confidence level during a speech delivery",
+    options: ["eye contact", "nose contact", "a little wine", "drug"],
+    ans: "eye contact",
+  },
+  {
+    question: "Back-tracking and rereading in reading simply refers to ____",
+    options: ["regression", "progression", "coherence", "flashback"],
+    ans: "regression",
+  },
+  {
+    question: "____ is not a quality of a good paragraph",
+    options: ["unity", "cohesion", "completeness", "topicality"],
+    ans: "topicality",
+  },
+  {
+    question: "Structural wholeness refers to ____ in a good paragraph",
+    options: ["completeness", "cohesion", "topic sentence", "coherence"],
+    ans: "completeness",
+  },
+  {
+    question: "The thesis statement is found in the ____",
+    options: ["essays", "letters", "applications", "queries"],
+    ans: "essays",
+  },
+  {
+    question: "Letter writing can be grouped into ____",
+    options: ["three", "two", "five", "six"],
+    ans: "three",
+  },
+  {
+    question: "The addressee’s address does not feature in ____ letter",
+    options: ["formal", "semi-formal", "informal", "all"],
+    ans: "informal",
+  },
+  {
+    question: "____ is not a complimentary close in a letter",
+    options: [
+      "Yours faithfully",
+      "Yours sincerely",
+      "Your son",
+      "His Royal Highness",
+    ],
+    ans: "His Royal Highness",
+  },
+];
+
+export const data2 = [
+  {
+    question:
+      "Which of these is not one of the factors that aid students’ listening skill?",
+    options: [
+      "identify the defining moments of the lecture",
+      "encourage distractions",
+      "avoid negative influence",
+      "concentrate on the message",
+    ],
+    ans: "encourage distractions",
+  },
+  {
+    question:
+      "One of these is not one of the tips for developing efficient study habits",
+    options: [
+      "streamline your notes",
+      "schedule your time",
+      "attend class occasionally",
+      "minimize distractions",
+    ],
+    ans: "attend class occasionally",
+  },
+  {
+    question:
+      "All the points below except one will enable students to deliver on their assignment",
+    options: [
+      "plan",
+      "ignore relevant information about the assignment",
+      "analyse the question",
+      "edit and proofread",
+    ],
+    ans: "ignore relevant information about the assignment",
+  },
+  {
+    question:
+      "_____ is the act of appropriating intellectual material of other people for use without proper acknowledgement",
+    options: ["forgery", "fraud", "plagiarism", "impersonation"],
+    ans: "plagiarism",
+  },
+  {
+    question: "Students can avoid plagiarism through all the following except",
+    options: [
+      "cite the works consulted",
+      "paraphrase ideas",
+      "reference the materials used",
+      "quote from other sources without acknowledgement",
+    ],
+    ans: "quote from other sources without acknowledgement",
+  },
+  {
+    question: "By saying that 'language is human specific', it means that",
+    options: [
+      "only human beings communicate",
+      "only human beings use language",
+      "all living things use language",
+      "language only exists in the spoken form",
+    ],
+    ans: "only human beings use language",
+  },
+  {
+    question:
+      "Language is defined as a purely human and non-instinctive method of communicating by",
+    options: ["Sapir", "Womack", "Osisanwo", "Tamunobelema"],
+    ans: "Sapir",
+  },
+  {
+    question: "Language is found ____",
+    options: [
+      "wherever there are problems",
+      "among primitive people only",
+      "among civilized people only",
+      "wherever human beings exist",
+    ],
+    ans: "wherever human beings exist",
+  },
+  {
+    question: "Which of these is not true about language?",
+    options: [
+      "it is creative",
+      "it is rule governed",
+      "it is both spoken and written",
+      "it is instinctive",
+    ],
+    ans: "it is instinctive",
+  },
+  {
+    question:
+      "The feature of language referring to lack of logical connection is",
+    options: [
+      "productivity",
+      "arbitrariness",
+      "transferability",
+      "semanticity",
+    ],
+    ans: "arbitrariness",
+  },
+
+  {
+    question:
+      "The characteristic of language that allows discussion of things not present is",
+    options: ["vocal-auditory", "performative", "displacement", "openness"],
+    ans: "displacement",
+  },
+  {
+    question: "Pick the one that is not among features of language",
+    options: [
+      "reflexibility",
+      "rule governance",
+      "creativity",
+      "instinctiveness",
+    ],
+    ans: "instinctiveness",
+  },
+  {
+    question: "The role of language that maintains social relationships is",
+    options: [
+      "informative role",
+      "phatic role",
+      "performative role",
+      "documentation role",
+    ],
+    ans: "phatic role",
+  },
+  {
+    question: "___ is the element that triggers communication process",
+    options: ["stimulus", "grammaticality", "intention", "encoder"],
+    ans: "stimulus",
+  },
+  {
+    question: "___ is regarded as the core component of communication process",
+    options: ["stimulus", "encoder", "proxemics", "message"],
+    ans: "message",
+  },
+  {
+    question: "Encoder in communication process is also called all except",
+    options: ["transmitter", "sender", "source", "director"],
+    ans: "director",
+  },
+  {
+    question: "Which of these is not a type of noise in communication?",
+    options: ["linguistic", "kinesics", "grammatical", "channel"],
+    ans: "kinesics",
+  },
+  {
+    question: "A decoder as an element is also called all except",
+    options: ["receiver", "hearer", "audience", "feedback"],
+    ans: "feedback",
+  },
+  {
+    question: "___ is the means through which message is transmitted",
+    options: ["medium", "channel", "speaking", "audio"],
+    ans: "channel",
+  },
+  {
+    question: "Which is not part of oral medium of communication?",
+    options: ["radio", "telephone", "face-to-face", "poster"],
+    ans: "poster",
+  },
+
+  // ⚡ skipping nothing — continuing
+
+  {
+    question: "Which is not a barrier to effective listening?",
+    options: ["silent environment", "hunger", "physical noise", "illness"],
+    ans: "silent environment",
+  },
+  {
+    question: "_____ reading is for general understanding",
+    options: ["intensive", "extensive", "personal", "group"],
+    ans: "extensive",
+  },
+  {
+    question: "Which is not a faulty reading habit?",
+    options: [
+      "head movement",
+      "pointing at words",
+      "regression",
+      "silent reading",
+    ],
+    ans: "silent reading",
+  },
+  {
+    question: "English has how many sounds?",
+    options: ["24", "12", "44", "36"],
+    ans: "44",
+  },
+  {
+    question: "Colon punctuation is symbolized by",
+    options: ["(:)", "(;)", "(.)", '(" ")'],
+    ans: "(:)",
+  },
+  {
+    question: "Punctuation used to separate series of phrases is",
+    options: ["colon", "comma", "dash", "hyphen"],
+    ans: "comma",
+  },
+  {
+    question: "Punctuation showing possession is",
+    options: ["hyphen", "dash", "apostrophe", "semi-colon"],
+    ans: "apostrophe",
+  },
+  {
+    question: "Group of sentences expressing a single idea is",
+    options: ["phrase", "clause", "paragraph", "theme"],
+    ans: "paragraph",
+  },
+  {
+    question: "Which is not a quality of a good paragraph?",
+    options: ["coherence", "ambiguity", "completeness", "thematic unity"],
+    ans: "ambiguity",
+  },
+  {
+    question: "Which is correctly written?",
+    options: [
+      "Yours Sincerely",
+      "yours sincerely",
+      "Yours sincerely",
+      "Your’s Sincerely",
+    ],
+    ans: "Yours sincerely",
+  },
+];
+
+export const data3 = [
+  {
+    question:
+      "The …………… is otherwise known as the sender or source of the message",
+    options: ["stimulus", "channel", "human", "encoder"],
+    ans: "encoder",
+  },
+  {
+    question:
+      "When the sender uses words too difficult to understand, this is called ____ noise",
+    options: ["linguistic", "semantic", "grammatical", "channel"],
+    ans: "semantic",
+  },
+  {
+    question: "One of the following is not a type of communication",
+    options: ["verbal", "chronemics", "non-verbal", "imagination"],
+    ans: "imagination",
+  },
+  {
+    question: "One of the following is not a faulty reading habit",
+    options: ["sub-vocalisation", "regression", "fatigue", "head movement"],
+    ans: "fatigue",
+  },
+  {
+    question: "Reading at the fastest speed to extract main ideas is called",
+    options: ["skimming", "scanning", "intensive reading", "extensive reading"],
+    ans: "skimming",
+  },
+  {
+    question: "Using intellectual material without acknowledgement is",
+    options: ["paraphrasing", "plagiarism", "referencing", "mistake"],
+    ans: "plagiarism",
+  },
+  {
+    question:
+      "The buildings damaged by the rainstorm ______ schools, hospitals and houses",
+    options: ["included", "include", "were included", "was including"],
+    ans: "include",
+  },
+  {
+    question:
+      "I would have been off to see Biola by the time you ______ tomorrow",
+    options: ["returned", "return", "are returning", "would return"],
+    ans: "return",
+  },
+  {
+    question: "The lecturer said we ______ be able to finish the chapter",
+    options: ["must", "can", "shall", "should"],
+    ans: "should",
+  },
+  {
+    question: "If you want a successful marriage you ______ pray for it",
+    options: ["have better", "better", "had better", "would better"],
+    ans: "better",
+  },
+
+  {
+    question: "I could have agreed if I _____ not _____ you promise",
+    options: ["have/heard", "had/heard", "were/hearing", "has/heard"],
+    ans: "had/heard",
+  },
+  {
+    question: "He ______ during the whole of last month",
+    options: ["was sick", "has been sick", "had been sick", "had sicken"],
+    ans: "was sick",
+  },
+  {
+    question: "Everyone of his constituents ______ that he is unreliable",
+    options: ["know", "knows", "will know", "do know"],
+    ans: "knows",
+  },
+  {
+    question: "Correct spelling is",
+    options: ["previlege", "privilege", "previledge", "priviledge"],
+    ans: "privilege",
+  },
+  {
+    question: "I am used ______ bread without butter",
+    options: ["to eat", "in eating", "of eating", "to eating"],
+    ans: "to eating",
+  },
+  {
+    question:
+      "One can no longer take for granted what ______ enjoyed, can _____?",
+    options: ["you/you", "one/one", "he/he", "one/you"],
+    ans: "one/one",
+  },
+  {
+    question: "The competitor who ______ earlier has started ______ again",
+    options: [
+      "fainted/to run",
+      "had fainted",
+      "fainted/running",
+      "fainted/on running",
+    ],
+    ans: "fainted/running",
+  },
+  {
+    question: "We cannot explain his objection ______ the new law",
+    options: ["for", "with", "at", "to"],
+    ans: "to",
+  },
+  {
+    question: "Their ______ make people believe they belong to same school",
+    options: ["philosophy", "philosophys", "philophies", "philosophy’s"],
+    ans: "philophies",
+  },
+  {
+    question: "The keepers themselves are sometimes ______ by bees",
+    options: ["stinged", "stung", "stang", "sting"],
+    ans: "stung",
+  },
+
+  {
+    question: "I now realize I ______ you before",
+    options: ["had met", "have met", "met", "meet"],
+    ans: "had met",
+  },
+  {
+    question: "My friend ______ me for many years when I met him",
+    options: ["never saw", "did not see", "had not seen", "had never seen"],
+    ans: "had not seen",
+  },
+  {
+    question: "My ______ is for you to refuse the ______ of the wicked",
+    options: [
+      "advise/advice",
+      "advice/advice",
+      "advice/advise",
+      "advise/advise",
+    ],
+    ans: "advice/advice",
+  },
+  {
+    question: "Police vehicles race ______ full speed",
+    options: ["on", "with", "at", "in"],
+    ans: "at",
+  },
+  {
+    question: "If the two boys ______ been bitten, take them to hospital",
+    options: ["has", "have", "had", "is"],
+    ans: "have",
+  },
+  {
+    question: "It was ______ who fought the civil war",
+    options: ["they", "them", "those", "their"],
+    ans: "they",
+  },
+  {
+    question: "_______ can’t agree on the matter",
+    options: ["you and them", "she and I", "I and she", "them and he"],
+    ans: "she and I",
+  },
+  {
+    question: "Nigerians need to regard ______ as members of same family",
+    options: ["themselves", "one another", "each other", "theirselves"],
+    ans: "one another",
+  },
+  {
+    question: "_______ are good friends",
+    options: ["he and I", "I and him", "I and he", "he and me"],
+    ans: "he and I",
+  },
+  {
+    question: "That is larger than ______",
+    options: ["your", "yours", "yours’", "your’s"],
+    ans: "yours",
+  },
+
+  {
+    question: "You are not wiser than ______",
+    options: ["me", "mine", "I", "myself"],
+    ans: "I",
+  },
+  {
+    question: "There is ______ tea",
+    options: ["few", "little", "a few", "a little"],
+    ans: "a little",
+  },
+  {
+    question: "You must not contact the teacher ______ told you",
+    options: ["who", "whose", "whom", "whoms"],
+    ans: "who",
+  },
+  {
+    question: "He was charged with complicity ______ the coup",
+    options: ["in", "for", "about", "on"],
+    ans: "in",
+  },
+  {
+    question: "He was convicted ______ stealing",
+    options: ["with", "in", "of", "for"],
+    ans: "of",
+  },
+  {
+    question: "The activities were ______ with a party",
+    options: ["rounded off", "rounded over", "rounded through", "rounded up"],
+    ans: "rounded off",
+  },
+  {
+    question: "This is the man ______ told me the story",
+    options: ["whom I said", "who I said", "I said that he", "who I said he"],
+    ans: "who I said",
+  },
+  {
+    question: "That is not your book; it is ______",
+    options: ["James’", "Jame’s", "James’ own", "for Jame’s"],
+    ans: "James’",
+  },
+  {
+    question: "The ______ between teams ended in draw",
+    options: ["march", "marsh", "match", "martch"],
+    ans: "match",
+  },
+  {
+    question: "Shall I make cheque ______ you",
+    options: ["in for", "in with", "up for", "out to"],
+    ans: "out to",
+  },
+
+  {
+    question: "The boy lacks good ______ at the table",
+    options: ["etiquete", "etiquette", "ettiquete", "etiquet"],
+    ans: "etiquette",
+  },
+  {
+    question: "________ the main points of the lecture",
+    options: ["those were", "that was", "there were", "this was"],
+    ans: "those were",
+  },
+  {
+    question: "She is so ______ that she will accept anything",
+    options: ["credible", "credulous", "incredible", "incredulous"],
+    ans: "credulous",
+  },
+  {
+    question: "The boys are naughty, they have started fighting again ______",
+    options: ["haven’t they", "isn’t it", "not so", "have they"],
+    ans: "haven’t they",
+  },
+  {
+    question: "The students haven’t come back ______",
+    options: ["isn’t it", "have they", "is it", "haven’t they"],
+    ans: "have they",
+  },
+  {
+    question: "I can’t remember the answer ______",
+    options: ["out of hand", "off hand", "to hand", "off head"],
+    ans: "off hand",
+  },
+  {
+    question: "Government suffered a ______",
+    options: ["check", "set-back", "hindrance", "disturbance"],
+    ans: "set-back",
+  },
+  {
+    question: "Dan and Tina greeted ______",
+    options: ["one another", "themselves", "each other", "theirselves"],
+    ans: "each other",
+  },
+  {
+    question: "The handset was faulty, impossible to ______ them",
+    options: ["get at", "get over to", "get through to", "get on to"],
+    ans: "get through to",
+  },
+  {
+    question: "My sister bought a ______ box",
+    options: [
+      "black heavy new metal",
+      "black new heavy metal",
+      "new black heavy metal",
+      "heavy new black metal",
+    ],
+    ans: "new black heavy metal",
+  },
+];
+
+export const data4 = [
+  {
+    question: "Which of the following is a feature of effective communication?",
+    options: ["clarity", "confusion", "noise", "ambiguity"],
+    ans: "clarity",
+  },
+  {
+    question: "The process of sending and receiving messages is called",
+    options: ["communication", "interaction", "conversation", "discussion"],
+    ans: "communication",
+  },
+  {
+    question: "Non-verbal communication includes all except",
+    options: ["gesture", "facial expression", "speech", "body language"],
+    ans: "speech",
+  },
+  {
+    question: "Which of the following is not a barrier to communication?",
+    options: ["noise", "feedback", "language difference", "distraction"],
+    ans: "feedback",
+  },
+  {
+    question: "The receiver of a message is also known as",
+    options: ["decoder", "encoder", "sender", "speaker"],
+    ans: "decoder",
+  },
+  {
+    question: "A paragraph should have one main",
+    options: ["sentence", "idea", "word", "letter"],
+    ans: "idea",
+  },
+  {
+    question: "Which of these is not a type of essay?",
+    options: ["narrative", "descriptive", "argumentative", "alphabetical"],
+    ans: "alphabetical",
+  },
+  {
+    question: "A formal letter should end with",
+    options: ["Yours sincerely", "Love", "Cheers", "Bye"],
+    ans: "Yours sincerely",
+  },
+  {
+    question: "The correct plural of 'child' is",
+    options: ["childs", "children", "childes", "childrens"],
+    ans: "children",
+  },
+  {
+    question: "Which of the following is an adjective?",
+    options: ["run", "happy", "quickly", "jump"],
+    ans: "happy",
+  },
+
+  {
+    question: "A verb expresses",
+    options: ["action", "quality", "name", "place"],
+    ans: "action",
+  },
+  {
+    question: "Which sentence is correct?",
+    options: [
+      "She go to school",
+      "She goes to school",
+      "She going to school",
+      "She gone to school",
+    ],
+    ans: "She goes to school",
+  },
+  {
+    question: "The antonym of 'hot' is",
+    options: ["warm", "cold", "heat", "boiling"],
+    ans: "cold",
+  },
+  {
+    question: "The synonym of 'fast' is",
+    options: ["slow", "quick", "late", "stop"],
+    ans: "quick",
+  },
+  {
+    question: "Which of these is a noun?",
+    options: ["run", "table", "quickly", "happy"],
+    ans: "table",
+  },
+  {
+    question: "A group of words without a subject and verb is called",
+    options: ["sentence", "phrase", "clause", "paragraph"],
+    ans: "phrase",
+  },
+  {
+    question: "A group of words with a subject and verb is called",
+    options: ["phrase", "clause", "word", "letter"],
+    ans: "clause",
+  },
+  {
+    question: "Which punctuation ends a sentence?",
+    options: ["comma", "full stop", "colon", "semicolon"],
+    ans: "full stop",
+  },
+  {
+    question: "Which is used to ask a question?",
+    options: ["full stop", "question mark", "comma", "colon"],
+    ans: "question mark",
+  },
+  {
+    question: "The opposite of 'big' is",
+    options: ["large", "huge", "small", "wide"],
+    ans: "small",
+  },
+
+  {
+    question: "Which of these is a preposition?",
+    options: ["run", "under", "happy", "quick"],
+    ans: "under",
+  },
+  {
+    question: "The tense of 'I am eating' is",
+    options: ["past", "present continuous", "future", "past perfect"],
+    ans: "present continuous",
+  },
+  {
+    question: "Which is a conjunction?",
+    options: ["and", "run", "quickly", "table"],
+    ans: "and",
+  },
+  {
+    question: "Which of these is correct?",
+    options: [
+      "He don’t know",
+      "He doesn’t knows",
+      "He doesn’t know",
+      "He not know",
+    ],
+    ans: "He doesn’t know",
+  },
+  {
+    question: "The plural of 'man' is",
+    options: ["mans", "men", "manes", "mens"],
+    ans: "men",
+  },
+  {
+    question: "Which is a correct sentence?",
+    options: ["They is here", "They are here", "They am here", "They be here"],
+    ans: "They are here",
+  },
+  {
+    question: "Which word is an adverb?",
+    options: ["quickly", "quick", "run", "table"],
+    ans: "quickly",
+  },
+  {
+    question: "Which is correct?",
+    options: [
+      "I has a car",
+      "I have a car",
+      "I having a car",
+      "I had have a car",
+    ],
+    ans: "I have a car",
+  },
+  {
+    question: "The opposite of 'happy' is",
+    options: ["sad", "joy", "smile", "laugh"],
+    ans: "sad",
+  },
+  {
+    question: "Which is a pronoun?",
+    options: ["he", "run", "table", "fast"],
+    ans: "he",
+  },
+];
+
+export const data = [
+  {
+    question: "The word 'entrepreneurship' is derived from which language?",
+    options: ["Latin", "Greek", "French", "German"],
+    ans: "French",
+  },
+  {
+    question: "What does the French word 'entreprendre' mean?",
+    options: ["To innovate", "To undertake", "To invest", "To trade"],
+    ans: "To undertake",
+  },
+  {
+    question: "Which scholar first linked entrepreneurship with innovation?",
+    options: ["Cantillon", "Schumpeter", "Penrose", "Gartner"],
+    ans: "Schumpeter",
+  },
+  {
+    question: "According to Cantillon, an entrepreneur is mainly a:",
+    options: ["Government worker", "Risk bearer", "Manager", "Investor"],
+    ans: "Risk bearer",
+  },
+  {
+    question: "Gartner defined entrepreneurship as:",
+    options: [
+      "Risk-taking",
+      "Innovation",
+      "Creation of organizations",
+      "Trading",
+    ],
+    ans: "Creation of organizations",
+  },
+  {
+    question: "Penrose sees entrepreneurship as:",
+    options: [
+      "Business ownership",
+      "Opportunity recognition",
+      "Employment",
+      "Production",
+    ],
+    ans: "Opportunity recognition",
+  },
+  {
+    question: "Okpara emphasized entrepreneurship as:",
+    options: [
+      "Job seeking",
+      "Opportunity exploitation",
+      "Government policy",
+      "Taxation",
+    ],
+    ans: "Opportunity exploitation",
+  },
+  {
+    question: "Which is NOT part of entrepreneurship?",
+    options: [
+      "Innovation",
+      "Risk-taking",
+      "Tax evasion",
+      "Resource combination",
+    ],
+    ans: "Tax evasion",
+  },
+  {
+    question: "The first economist to use 'entrepreneur' was:",
+    options: ["Adam Smith", "Cantillon", "Keynes", "Marshall"],
+    ans: "Cantillon",
+  },
+  {
+    question: "J.B. Say described entrepreneurs as:",
+    options: ["Risk takers", "Innovators", "Change agents", "Managers"],
+    ans: "Change agents",
+  },
+
+  // ---------- CONTINUED (no skips, all structured) ----------
+
+  {
+    question: "Entrepreneurship involves:",
+    options: [
+      "Only profit making",
+      "Only trading",
+      "Business creation and growth",
+      "Only employment",
+    ],
+    ans: "Business creation and growth",
+  },
+  {
+    question: "Intrapreneurship occurs:",
+    options: [
+      "Outside organizations",
+      "Inside organizations",
+      "In government",
+      "In schools only",
+    ],
+    ans: "Inside organizations",
+  },
+  {
+    question: "Risk-taking theory says entrepreneurs are:",
+    options: [
+      "Extreme risk takers",
+      "Moderate risk takers",
+      "Risk avoiders",
+      "No risk takers",
+    ],
+    ans: "Moderate risk takers",
+  },
+  {
+    question: "Need for Achievement theory was developed by:",
+    options: ["McClelland", "Schumpeter", "Cantillon", "Weber"],
+    ans: "McClelland",
+  },
+  {
+    question: "External locus of control means:",
+    options: [
+      "Control over life",
+      "Fate controls life",
+      "Self-confidence",
+      "Hard work",
+    ],
+    ans: "Fate controls life",
+  },
+  {
+    question: "Internal locus of control means:",
+    options: [
+      "Fate controls life",
+      "Others control life",
+      "You control your life",
+      "Government control",
+    ],
+    ans: "You control your life",
+  },
+  {
+    question: "Innovation is:",
+    options: [
+      "Copying ideas",
+      "Creating new ideas",
+      "Selling goods",
+      "Managing workers",
+    ],
+    ans: "Creating new ideas",
+  },
+  {
+    question: "Entrepreneurs are important because they:",
+    options: [
+      "Increase unemployment",
+      "Reduce innovation",
+      "Create jobs",
+      "Stop development",
+    ],
+    ans: "Create jobs",
+  },
+  {
+    question: "Which theory emphasizes innovation?",
+    options: [
+      "Schumpeter theory",
+      "Risk theory",
+      "Cultural theory",
+      "Economic theory",
+    ],
+    ans: "Schumpeter theory",
+  },
+  {
+    question: "Entrepreneurship contributes to:",
+    options: ["Economic growth", "Poverty", "Unemployment", "Inflation only"],
+    ans: "Economic growth",
+  },
+
+  // ---------- FINAL SECTION ----------
+
+  {
+    question: "Which is a key entrepreneurial skill?",
+    options: ["Laziness", "Creativity", "Fear", "Weakness"],
+    ans: "Creativity",
+  },
+  {
+    question: "A successful entrepreneur must:",
+    options: [
+      "Avoid risk",
+      "Take initiative",
+      "Depend on others",
+      "Be passive",
+    ],
+    ans: "Take initiative",
+  },
+  {
+    question: "Entrepreneurship education helps to:",
+    options: [
+      "Increase dependency",
+      "Build skills",
+      "Reduce knowledge",
+      "Create confusion",
+    ],
+    ans: "Build skills",
+  },
+  {
+    question: "Which is NOT a function of an entrepreneur?",
+    options: ["Innovation", "Risk-taking", "Decision making", "Sleeping"],
+    ans: "Sleeping",
+  },
+  {
+    question: "A business plan is used to:",
+    options: [
+      "Confuse investors",
+      "Guide business",
+      "Waste time",
+      "Avoid planning",
+    ],
+    ans: "Guide business",
+  },
+  {
+    question: "Small businesses are important because they:",
+    options: [
+      "Destroy economy",
+      "Create employment",
+      "Reduce income",
+      "Increase poverty",
+    ],
+    ans: "Create employment",
+  },
+  {
+    question: "Entrepreneurship can be learned through:",
+    options: ["Education", "Practice", "Experience", "All of the above"],
+    ans: "All of the above",
+  },
+  {
+    question: "An entrepreneur is a person who:",
+    options: ["Avoids risk", "Creates business", "Only works", "Only studies"],
+    ans: "Creates business",
+  },
+  {
+    question: "Opportunity recognition means:",
+    options: [
+      "Ignoring chances",
+      "Identifying business ideas",
+      "Closing business",
+      "Avoiding risks",
+    ],
+    ans: "Identifying business ideas",
+  },
+  {
+    question: "Entrepreneurship helps to:",
+    options: [
+      "Reduce development",
+      "Promote innovation",
+      "Increase laziness",
+      "Stop growth",
+    ],
+    ans: "Promote innovation",
+  },
+];
+
+export const COURSES_DATA = {
+  "GST 111": [
+    {
+      question: "A poor listener only ____",
+      options: [
+        "listen for facts",
+        "listen to concluding statements",
+        "listen to introductory remarks",
+        "bothers about speaker’s language",
+      ],
+      ans: "listen for facts",
+    },
+    {
+      question: "An outline helps the student to ____",
+      options: [
+        "memorize points",
+        "structure assignment",
+        "date materials",
+        "summarize work",
+      ],
+      ans: "structure assignment",
+    },
+    {
+      question: "A good student must provide ____ for his/her work",
+      options: [
+        "only the page of source material",
+        "only publishers of source material",
+        "initials of author",
+        "a reference for his/her work",
+      ],
+      ans: "a reference for his/her work",
+    },
+    {
+      question: "Plagiarism does not cover ____",
+      options: [
+        "copying from other person’s work",
+        "information that is common knowledge",
+        "lifting ideas mindlessly",
+        "all of the above",
+      ],
+      ans: "information that is common knowledge",
+    },
+    {
+      question: "A good learner ____",
+      options: [
+        "goes to library daily",
+        "is an attentive listener",
+        "sits in front of class",
+        "always asks questions",
+      ],
+      ans: "is an attentive listener",
+    },
+    {
+      question: "One of these is a more rigorous way of getting knowledge ____",
+      options: ["reading", "studying", "acting", "talking"],
+      ans: "studying",
+    },
+    {
+      question: "Unlike communication, language is ____",
+      options: [
+        "human specific",
+        "animal specific",
+        "both human and animal specific",
+        "neither",
+      ],
+      ans: "human specific",
+    },
+    {
+      question:
+        "When a language lacks logical connection between words and objects, it is ____",
+      options: ["arbitrary", "objective", "subjective", "unintelligible"],
+      ans: "arbitrary",
+    },
+    {
+      question: "Anything that reduces communication fidelity is ____",
+      options: ["noise", "medium", "feedback", "stimulus"],
+      ans: "noise",
+    },
+    {
+      question: "Body movement is a form of ____",
+      options: ["proxemics", "kinesics", "chronemics", "distance"],
+      ans: "kinesics",
+    },
+  ],
+
+  "ENT 211": [
+    {
+      question: "The word 'entrepreneurship' is derived from which language?",
+      options: ["Latin", "Greek", "French", "German"],
+      ans: "French",
+    },
+    {
+      question: "What does the French word 'entreprendre' mean?",
+      options: ["To innovate", "To undertake", "To invest", "To trade"],
+      ans: "To undertake",
+    },
+    {
+      question: "Which scholar first linked entrepreneurship with innovation?",
+      options: ["Cantillon", "Schumpeter", "Penrose", "Gartner"],
+      ans: "Schumpeter",
+    },
+    {
+      question: "Cantillon defined entrepreneur as a:",
+      options: ["Government worker", "Risk bearer", "Manager", "Investor"],
+      ans: "Risk bearer",
+    },
+    {
+      question: "Entrepreneurship involves:",
+      options: [
+        "Only profit making",
+        "Only trading",
+        "Business creation and growth",
+        "Only employment",
+      ],
+      ans: "Business creation and growth",
+    },
+    {
+      question: "Intrapreneurship occurs:",
+      options: [
+        "Outside organizations",
+        "Inside organizations",
+        "In government",
+        "In schools only",
+      ],
+      ans: "Inside organizations",
+    },
+    {
+      question: "Innovation means:",
+      options: [
+        "Copying ideas",
+        "Creating new ideas",
+        "Selling goods",
+        "Managing workers",
+      ],
+      ans: "Creating new ideas",
+    },
+    {
+      question: "Entrepreneurs are important because they:",
+      options: [
+        "Increase unemployment",
+        "Reduce innovation",
+        "Create jobs",
+        "Stop development",
+      ],
+      ans: "Create jobs",
+    },
+    {
+      question: "Entrepreneurship contributes to:",
+      options: ["Economic growth", "Poverty", "Unemployment", "Inflation only"],
+      ans: "Economic growth",
+    },
+    {
+      question: "A business plan is used to:",
+      options: [
+        "Confuse investors",
+        "Guide business",
+        "Waste time",
+        "Avoid planning",
+      ],
+      ans: "Guide business",
+    },
+  ],
+};
