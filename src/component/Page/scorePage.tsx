@@ -5,18 +5,15 @@ export default function ScorePage() {
   const location = useLocation();
   const navigate = useNavigate();
 
-  const score = location.state?.score ?? 0;
-  const percentage = Math.round((score / 15) * 100);
+ const score = location.state?.score ?? 0;
+ const total = location.state?.total ?? 10; 
+ const percentage = Math.round((score / total) * 100);
 
-  const remark = () => {
-    if (score > 10) {
-      return <div>Excellent performance! 🎉</div>;
-    } else if (score > 5) {
-      return <div>Good performance</div>;
-    } else {
-      return <div>Bad performance</div>;
-    }
-  };
+ const remark = () => {
+   if (score > total * 0.7) return <div>Excellent performance! 🎉</div>;
+   else if (score > total * 0.4) return <div>Good performance</div>;
+   else return <div>Bad performance</div>;
+ };
 
   return (
     <div className="score_container">
@@ -26,7 +23,9 @@ export default function ScorePage() {
         </div>
 
         <div className="scoretext">
-          <div className="score">{score} /15</div>
+          <div className="score">
+            {score} / {total}
+          </div>
           <div className="yourscore">Your score</div>
 
           <div className="score-review">{remark()}</div>

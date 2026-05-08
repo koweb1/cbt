@@ -1,0 +1,275 @@
+import { useState } from "react";
+
+
+interface Course {
+  code: string;
+  title: string;
+  questions: number;
+  icon: string;
+  progress: number;
+}
+
+const COURSES: Course[] = [
+  {
+    code: "GST 101",
+    title: "Use of English",
+    questions: 120,
+    icon: "📝",
+    progress: 32,
+  },
+  {
+    code: "GST 102",
+    title: "Philosophy & Logic",
+    questions: 85,
+    icon: "💡",
+    progress: 0,
+  },
+  {
+    code: "GNS 101",
+    title: "Communication Skills",
+    questions: 140,
+    icon: "🗣️",
+    progress: 67,
+  },
+  {
+    code: "MTH 101",
+    title: "General Mathematics",
+    questions: 200,
+    icon: "📐",
+    progress: 15,
+  },
+];
+
+const CourseSelect = () => {
+  const [query, setQuery] = useState("");
+
+  const filtered = COURSES.filter(
+    (c) =>
+      c.code.toLowerCase().includes(query.toLowerCase()) ||
+      c.title.toLowerCase().includes(query.toLowerCase()),
+  );
+
+  return (
+    <div className="course-page">
+      <span className="badge">2026/2027 Academic Session</span>
+
+      <h1 className="title">Select Your Course</h1>
+      <p className="subtitle">Start practicing past questions in seconds</p>
+
+      <div className="search-wrap">
+        <svg
+          className="search-icon"
+          width="15"
+          height="15"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="white"
+          strokeWidth="2.2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <circle cx="11" cy="11" r="8" />
+          <line x1="21" y1="21" x2="16.65" y2="16.65" />
+        </svg>
+        <input
+          className="search"
+          placeholder="Search GST 101, GNS 102..."
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+        />
+      </div>
+
+      <div className="stats-row">
+        <div className="stat">
+          <strong>{COURSES.length}</strong>
+          Courses
+        </div>
+        <div className="stat divider">|</div>
+        <div className="stat">
+          <strong>{COURSES.reduce((sum, c) => sum + c.questions, 0)}</strong>
+          Questions
+        </div>
+        <div className="stat divider">|</div>
+        <div className="stat">
+          <strong>Free</strong>
+          Access
+        </div>
+      </div>
+
+      <div className="grid">
+        {filtered.length > 0 ? (
+          filtered.map((c) => (
+            <div key={c.code} className="card">
+              <div className="card-top">
+                <div className="card-icon">{c.icon}</div>
+                <span className="card-pill">{c.questions} Qs</span>
+              </div>
+
+              <div className="card-code">{c.code}</div>
+              <div className="card-title">{c.title}</div>
+
+              <div className="card-meta">
+                <span className="dot" />
+                {c.progress > 0 ? `${c.progress}% completed` : "Not started"}
+              </div>
+
+              <div className="card-footer">
+                <div className="progress-bar">
+                  <div
+                    className="progress-fill"
+                    style={{ width: `${c.progress}%` }}
+                  />
+                </div>
+                <button className="start-btn">
+                  Start <span className="arrow">→</span>
+                </button>
+              </div>
+            </div>
+          ))
+        ) : (
+          <p className="no-results">No courses match "{query}"</p>
+        )}
+      </div>
+    </div>
+  );
+};
+
+export default CourseSelect;
+
+
+
+
+
+
+
+
+
+
+import Heading from "../heading.tsx";
+import Body from "../body.tsx";
+import { data, alphabet } from "../Assets/data.tsx";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
+export default function MainPage() {
+  const [index, setIndex] = useState(0);
+  const [answers, setAnswers] = useState<(string | null)[]>([]);
+  const [score, setScore] = useState(0);
+
+  const lastQuestion = index === data.length - 1;
+  const navigate = useNavigate();
+
+  // NEW: calculate progress
+  const answered = answers.filter((a) => a !== null).length;
+  const progress = (answered / data.length) * 100;
+
+  function handleSelected(option: string) {
+    if (answers[index] != null) return;
+
+    const updated = [...answers];
+    updated[index] = option;
+    setAnswers(updated);
+
+    if (option === data[index].ans) {
+      setScore((prev) => prev + 1);
+    }
+  }
+
+  function handleNext() {
+    if (lastQuestion) {
+      navigate("/scores", { state: { score } });
+      return;
+    }
+
+    setIndex((prev) => prev + 1);
+  }
+
+  function handlePrevious() {
+    setIndex((prev) => prev - 1);
+  }
+
+  function handleTimeUp() {
+    navigate("/scores", { state: { score } });
+  }
+
+  return (
+    <div className="contact">
+
+      <div className="content">
+        <Heading
+          numbers={index + 1}
+          total={data.length}
+          previous={handlePrevious}
+          onTimeUp={handleTimeUp}
+        />
+
+        <Body
+          questions={data[index]}
+          letter={alphabet}
+          onNext={handleNext}
+          onSelect={handleSelected}
+          selected={answers[index] || null}
+          progress={progress} // NEW
+        />
+      </div>
+    </div>
+  );
+}
+
+
+
+
+import { IoMdCheckmark } from "react-icons/io";
+import { useLocation, useNavigate } from "react-router-dom";
+
+export default function ScorePage() {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const score = location.state?.score ?? 0;
+  const percentage = Math.round((score / 15) * 100);
+
+  const remark = () => {
+    if (score > 10) {
+      return <div>Excellent performance! 🎉</div>;
+    } else if (score > 5) {
+      return <div>Good performance</div>;
+    } else {
+      return <div>Bad performance</div>;
+    }
+  };
+
+  return (
+    <div className="score_container">
+      <div className="score-body">
+        <div className="scoremark">
+          <IoMdCheckmark size={40} />
+        </div>
+
+        <div className="scoretext">
+          <div className="score">{score} /15</div>
+          <div className="yourscore">Your score</div>
+
+          <div className="score-review">{remark()}</div>
+
+          <div className="score-description">
+            You got {score} questions correct.
+          </div>
+
+          <div className="score-description">Score: {percentage}%</div>
+
+          <button
+            className="score-button"
+            onClick={() => navigate("/Question_Answer")}
+          >
+            Retake Test
+          </button>
+
+          <button className="score-button2" onClick={() => navigate("/")}>
+            Exit page
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}

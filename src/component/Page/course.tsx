@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import { useNavigate } from "react-router-dom";
 
 interface Course {
   code: string;
@@ -11,37 +11,24 @@ interface Course {
 
 const COURSES: Course[] = [
   {
-    code: "GST 101",
+    code: "GST 111",
     title: "Use of English",
-    questions: 120,
+    questions: 10,
     icon: "📝",
-    progress: 32,
-  },
-  {
-    code: "GST 102",
-    title: "Philosophy & Logic",
-    questions: 85,
-    icon: "💡",
     progress: 0,
   },
   {
-    code: "GNS 101",
-    title: "Communication Skills",
-    questions: 140,
-    icon: "🗣️",
-    progress: 67,
-  },
-  {
-    code: "MTH 101",
-    title: "General Mathematics",
-    questions: 200,
-    icon: "📐",
-    progress: 15,
+    code: "ENT 211",
+    title: "Entrepreneurship",
+    questions: 10,
+    icon: "💡",
+    progress: 0,
   },
 ];
 
 const CourseSelect = () => {
   const [query, setQuery] = useState("");
+  const navigate = useNavigate();
 
   const filtered = COURSES.filter(
     (c) =>
@@ -73,7 +60,7 @@ const CourseSelect = () => {
         </svg>
         <input
           className="search"
-          placeholder="Search GST 101, GNS 102..."
+          placeholder="Search GST 111, ENT 211..."
           value={query}
           onChange={(e) => setQuery(e.target.value)}
         />
@@ -120,7 +107,14 @@ const CourseSelect = () => {
                     style={{ width: `${c.progress}%` }}
                   />
                 </div>
-                <button className="start-btn">
+                <button
+                  className="start-btn"
+                  onClick={() =>
+                    navigate("/Question_Answer", {
+                      state: { courseCode: c.code },
+                    })
+                  }
+                >
                   Start <span className="arrow">→</span>
                 </button>
               </div>
